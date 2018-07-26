@@ -1,3 +1,3 @@
 ## ZKP Secret Voting implementation
 
-Demo viewable on our [youtube channel](https://youtu.be/PGgE1TQl9Kk)
+Demo video during the Blockparty 2 Hackathon: viewable on our [youtube channel](https://youtu.be/PGgE1TQl9Kk)
