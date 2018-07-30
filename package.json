@@ -1,0 +1,19 @@
+{
+  "name": "secret-voting",
+  "version": "1.0.0",
+  "description": "ZKP secret voting implementation",
+  "main": "truffle.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icash-io/secret-voting.git"
+  },
+  "author": "lingqingmeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icash-io/secret-voting/issues"
+  },
+  "homepage": "https://github.com/icash-io/secret-voting#readme"
+}
