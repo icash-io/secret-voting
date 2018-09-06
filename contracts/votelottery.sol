@@ -20,7 +20,7 @@ contract votelottery is Ownable {
         string name;
         uint256 votes;
     }
-    candidate[] public candidates;
+    candidate[] private candidates;
     
     struct key {
         Pairing.G1Point g1;
