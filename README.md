@@ -16,12 +16,12 @@ iCash CTO Ling Qing Meng was asked to speak and mentor at Block Party 2 in Seoul
 ## How do zero-knowledge proofs work?
 The best way to explain the process of zero-knowledge proofs is with a non-digital example which is, of course, far from the complexity of zero-knowledge proofs but very well explains how they work.
 
-Let us assume there is a blind person and two balls, one black and one white. You then would like to prove to the blind person that these balls are indeed of differing colors without revealing the individual colors of each ball.
+> Let us assume there is a blind person and two balls, one black and one white. You then would like to prove to the blind person that these balls are indeed of differing colors without revealing the individual colors of each ball.
 
 
-For this, you ask the blind person to hide both balls under the table and bring one ball back up for you to see. After that, he should hide the ball back under the table and then either show the same ball or the other one. As a result, you can prove to the blind person that the colors are different by saying whether he changed the balls under the table or not.
+> For this, you ask the blind person to hide both balls under the table and bring one ball back up for you to see. After that, he should hide the ball back under the table and then either show the same ball or the other one. As a result, you can prove to the blind person that the colors are different by saying whether he changed the balls under the table or not.
 
-Obviously, the other person might think that you were just lucky and is not yet completely convinced that both balls have indeed different colors. Zero-knowledge proofs solve this problem by repeating the experiment over and over again. After every round, your chance of being consistently right by pure luck goes down by half. So with 5 rounds, you have a 1 in 32 chance of successfully faking. With 10 rounds, it is 1 in 1024, and with 20 rounds, it is about one in a million. This way one can reach any probabilistic level of proof that is desired, although an absolute certainty can never be achieved.
+> Obviously, the other person might think that you were just lucky and is not yet completely convinced that both balls have indeed different colors. Zero-knowledge proofs solve this problem by repeating the experiment over and over again. After every round, your chance of being consistently right by pure luck goes down by half. So with 5 rounds, you have a 1 in 32 chance of successfully faking. With 10 rounds, it is 1 in 1024, and with 20 rounds, it is about one in a million. This way one can reach any probabilistic level of proof that is desired, although an absolute certainty can never be achieved.
 
 Actual zero-knowledge proofs do not deal with balls, of course, but proof the validity of any kind of data. This includes financial data (transactions) or personal data (passwords, names, etc.).
 
