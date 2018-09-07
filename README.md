@@ -1,6 +1,10 @@
 ## ZKP Secret Voting Implementation
 
-Demo video during the Blockparty 2 Hackathon: viewable on our [youtube channel](https://youtu.be/PGgE1TQl9Kk)
+Demo video during the Blockparty 2 Hackathon.  
+
+[Video demo](https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e)
+
+Also viewable: [youtube channel](https://youtu.be/PGgE1TQl9Kk)
 
 iCash CTO Ling Qing Meng was asked to speak and mentor at Block Party 2 in Seoul, Korea this July. During this event, Ling was asked to deliver a speech regarding iCash, and their implementation of Zero Knowledge Proofs in Voting. Part of this event saw the students broken into teams, requiring them to all conceptualize, and build a working blockchain based project in 2 days. Ling oversaw the winning team's project outline and build, in which they implemented ZK Proofs. 
 
@@ -9,7 +13,7 @@ iCash CTO Ling Qing Meng was asked to speak and mentor at Block Party 2 in Seoul
 ![al text](https://i.imgur.com/2tcOAql.jpg)
 
 
-## How does zero-knowledge proof work?
+## How do zero-knowledge proofs work?
 The best way to explain the process of zero-knowledge proofs is with a non-digital example which is, of course, far from the complexity of zero-knowledge proofs but very well explains how they work.
 
 Let us assume there is a blind person and two balls, one black and one white. You then would like to prove to the blind person that these balls are indeed of differing colors without revealing the individual colors of each ball.
@@ -22,6 +26,25 @@ Obviously, the other person might think that you were just lucky and is not yet 
 Actual zero-knowledge proofs do not deal with balls, of course, but proof the validity of any kind of data. This includes financial data (transactions) or personal data (passwords, names, etc.).
 
 In mid-October 2017, part of the current iCash Development team built JPMorgan’s Quorum (its Ethereum-derived, permissioned blockchain platform) introduced the first integration of a zero-knowledge security layer (ZSL) into its enterprise blockchain.
+
+## Methods
+
+### addKey() 
+
+The `addKey()` function will add points on the elliptical curve (as necessary with elliptical curve implementation of ZKP) corresponding to SOMEONE with the right to vote.  
+  
+The identity of this person is not known at this point, only the owner of the contract (most likely the administration body of this entire vote). This happens for every person with the right to vote, so this forms a pool of known identities.  
+  
+## vote()  
+
+The `vote()` function will internally call `verify()` to try to "match" the new set of elliptical points with a the pool of known proof of identities already added through `addKey()`.  who was   
+
+## verify()
+
+Calls `pairingProd2()` which calls `pairing()`. Returns the result of computing the elliptic curve pairing check.  
+
+
+https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e
 
 # Potential Applications
 
