@@ -35,14 +35,15 @@ The `addKey()` function will add points on the elliptical curve (as necessary wi
   
 The identity of this person is not known at this point, only the owner of the contract (most likely the administration body of this entire vote). This happens for every person with the right to vote, so this forms a pool of known identities.  
   
-## vote()  
+### vote()  
 
-The `vote()` function will internally call `verify()` to try to "match" the new set of elliptical points with a the pool of known proof of identities already added through `addKey()`.  who was   
+The `vote()` function will internally call `verify()` to try to "match" the new set of elliptical points with a the pool of known proof of identities already added through `addKey()`.   
 
-## verify()
+### verify()
 
 Calls `pairingProd2()` which calls `pairing()`. Returns the result of computing the elliptic curve pairing check.  
 
+---
 
 https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e
 
