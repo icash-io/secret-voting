@@ -114,6 +114,7 @@ The supplied numbers are arranged into elliptical curve points and matched again
    
 So the verification will work, but what is the meaning of this? Note that we are dealing with abstract pieces of informations called “keys.” These keys serve as social security cards online, but without revealing the social security numbers. Zero-knowledge proof is used here to prove one’s identity without revealing one’s identity.  
   
+## Phase 3: Reveal  
 After all of the votes have been cast, the owner of the vote contract ends the voteNo one other than the owner can end the vote. Finally, the winner of the vote is known. By referring to the logs, we can see that the second candidate, Bob, received  the most, 2 votes; therefore Bob is the winner.   
   
 At the same time, ticket claims have started. Each voter will now enter his number that was kept hidden under hash.  
