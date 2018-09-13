@@ -7,7 +7,7 @@ tags:
 - AI  
 ---  
   
-# Hello
+# How iCash protects voter identity in it's Proof of Trust protocol
 
 ## Introduction
 Here we have a voting contract that gives each voter a chance to win at a lottery. This is one example of a way to encourage people to vote without revealing identities of voters. 
