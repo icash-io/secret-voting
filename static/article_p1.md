@@ -28,7 +28,7 @@ After the contract is deployed, we set up the candidates for the election using 
 
 
 
-In the next step, we use the `addKey()` function to add keys for the voters. The “keys” are points on an elliptical curve, which  are specifically chosen so that we will later be able to “match” with another set of points. Only people with a matching set of points are allowed to vote.  Without knowing unique secret information belonging to a voter, it would be extremely difficult for someone to determine a set of matching points in order to gain voting rights. The `addKey()` function: :
+In the next step, we use the `addKey()` function to add keys for the voters. The “keys” are [points on an elliptical curve](https://en.wikipedia.org/wiki/Counting_points_on_elliptic_curves), which  are specifically chosen so that we will later be able to “match” with another set of points. Only people with a matching set of points are allowed to vote.  Without knowing unique secret information belonging to a voter, it would be extremely difficult for someone to determine a set of matching points in order to gain voting rights. The `addKey()` function: :
 
 
 ```
