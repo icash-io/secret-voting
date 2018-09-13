@@ -112,6 +112,7 @@ function verify(uint256 p1x, uint256 p1y, uint256 p2x1, uint256 p2x2, uint256 p2
 
 The supplied numbers are arranged into elliptical curve points and matched against the list of known keys that were supplied through `addKey()` function. The actual computation required to verify a match between two sets of points is in `Pairing.pairingProd2()` function. This vote will only be accepted as legitimate if there is a matching key.
 
+> **Security Considerations**
 > In the function `verify()`, we do a linear search for a matching key. Any interested miner could potentially look into the transaction and make links between the key and the wallet address of the voter. Whether that gives the perpetrator interesting information would depend, yet again, on the offline security of the whole system.
    
 So the verification will work, but what is the meaning of this? Note that we are dealing with abstract pieces of informations called “keys.” These keys serve as social security cards online, but without revealing the social security numbers. Zero-knowledge proof is used here to prove one’s identity without revealing one’s identity.  
