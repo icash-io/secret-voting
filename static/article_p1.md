@@ -111,6 +111,8 @@ function verify(uint256 p1x, uint256 p1y, uint256 p2x1, uint256 p2x2, uint256 p2
   
 
 The supplied numbers are arranged into elliptical curve points and matched against the list of known keys that were supplied through `addKey()` function. The actual computation required to verify a match between two sets of points is in `Pairing.pairingProd2()` function. This vote will only be accepted as legitimate if there is a matching key.
+
+> In the function `verify()`, we do a linear search for a matching key. Any interested miner could potentially look into the transaction and make links between the key and the wallet address of the voter. Whether that gives the perpetrator interesting information would depend, yet again, on the offline security of the whole system.
    
 So the verification will work, but what is the meaning of this? Note that we are dealing with abstract pieces of informations called “keys.” These keys serve as social security cards online, but without revealing the social security numbers. Zero-knowledge proof is used here to prove one’s identity without revealing one’s identity.  
   
@@ -151,13 +153,12 @@ function endClaim() onlyOwner public {
  
 As soon as `endClaim()` is called, the winner will be with `findWinner()` function and the prize ETH will be transferred to the winner. Note how `findWinner()` function is taking the random seed collected from all claiming voters as an input. This means it will be very difficult to influence the outcome of this vote during the voting phase.   
   
-
+### Conclusion
+  
 In summary, we were able to come up with a voting system that does not reveal the voters’ identities using zero-knowledge proofs. Without it, it would have been very difficult to secure the identities on the blockchain without leaving some chance of having the real identity found out. 
 
 Because the blockchain is an immutable ledger, the data you store on it is traceable back to you. This happens with both the pseudoanonymous UTXO or account and balances design. Whether its smart contract function calls or cryptocurrency transactions tools already exist now that uses forensic analysis and machine learning to trace all your previous activity.
-
-
-
+  
 > One can ask, aren’t wallet address already a good proof of identity? 
 
 Yes, it is.  
@@ -165,18 +166,6 @@ Yes, it is.
 The idea is to keep the entity registering the keys and the entity assigning wallet addresses separate. The system is only as strong as its weakest link, and we have to consider attacks even before votes on the blockchain start, by our own government.
 
 
-
-### Conclusion
-
-In summary, we were able to come up with a voting system that does not reveal the voters’ identities using zero-knowledge proofs. Without it, it would have been very difficult to secure the identities online without leaving some chance of having the real identity found out. 
-
-> One can ask, aren’t wallet address already a good proof of identity? 
-
-Yes, it is, but the idea is to keep the entity registering the keys and the entity assigning wallet addresses separate. The system is only as strong as its weakest link, and we have to consider attacks even before votes on the blockchain start, by our own government.
-
-### Potential Vulnerabilities
-
-Speaking of security, we present here a solution using zero-knowledge proofs, but it is far from perfect. In the function `verify()`, we do a linear search for a matching key. Any interested miner could potentially look into the transaction and make links between the key and the wallet address of the voter. Whether that gives the perpetrator interesting information would depend, yet again, on the offline security of the whole system.
 
 
 
