@@ -1,5 +1,4 @@
 pragma solidity ^0.4.18;
-pragma experimental ABIEncoderV2;
 
 import "./Ownable.sol";
 import "./SafeMath.sol";
@@ -10,7 +9,7 @@ contract votelottery is Ownable {
     using SafeMath for uint256;
     
     struct Voter {
-        bool canVote;
+        bool voted;
         bool canClaim;
         bytes32 hashed_ticket;
     }
@@ -107,14 +106,6 @@ contract votelottery is Ownable {
         candidates.push(candidate(candidate_name, 0));
     }
     
-    function addVoter(address new_voter, bytes32 _hashed_ticket) onlyOwner vote_not_over public {
-        require(vote_started == false);
-        require(new_voter != address(0));
-        voters[new_voter].canVote = true;
-        voters[new_voter].canClaim = true;
-        voters[new_voter].hashed_ticket = _hashed_ticket;
-    }
-    
    function startVote() onlyOwner vote_not_over public {
         require(candidates.length > 0);
         require(vote_started == false);
@@ -169,17 +160,15 @@ contract votelottery is Ownable {
         }
     }
 
-    modifier canVote() {
-        require(voters[msg.sender].canVote == true);
+    function vote(uint256 candidate_, bytes32 _hashed_ticket, uint256 p1x, uint256 p1y,
+    uint256 p2x1, uint256 p2x2, uint256 p2y1, uint256 p2y2) vote_not_over public {
         require(vote_started == true);
-        _;
-    }
-
-    function vote(uint256 candidate_, uint256 p1x, uint256 p1y,
-    uint256 p2x1, uint256 p2x2, uint256 p2y1, uint256 p2y2) canVote vote_not_over public {
+        require(voters[msg.sender].voted == false);
         require(verify(p1x,p1y,p2x1,p2x2,p2y1,p2y2) == true);
-        voters[msg.sender].canVote = false;
 
+        voters[msg.sender].voted = true;
+        voters[msg.sender].canClaim = true;
+        voters[msg.sender].hashed_ticket = _hashed_ticket;
         candidates[candidate_].votes = candidates[candidate_].votes.add(1);
         tickets.push(msg.sender);
     }
