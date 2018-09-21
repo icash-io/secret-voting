@@ -93,6 +93,8 @@ endVote()
 claimTicket(10)
 ```
 
+The key takeaway is that 
+
 ### Step 7: 
   
 ```
