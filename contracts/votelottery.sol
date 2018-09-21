@@ -119,7 +119,7 @@ contract votelottery is Ownable {
         getResult();
     }
 
-    function testHash(uint256 ticket) public pure {
+    function testHash(uint256 ticket) public view {
         return keccak256(abi.encodePacked(msg.sender, ticket));
     }
     
