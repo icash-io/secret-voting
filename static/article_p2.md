@@ -1,4 +1,4 @@
-# Walkthrough of Code on Remix
+# Actual Steps
 
 ## This order is correct
 
@@ -137,3 +137,22 @@ claimTicket(15)
 ```
 endClaim()
 ```  
+
+
+End Result:
+```
+[
+  {
+    "from": "0x692a70d2e424a56d2c6c27aa97d1a86395877b3a",
+    "topic": "0x0afa9c75b545ad3f1d063ae4e86d64aed07c55eaa4813101cc53527bee17cc96",
+    "event": "winnerResult",
+    "args": {
+      "0": "0xdD870fA1b7C4700F2BD7f44238821C26f7392148",
+      "1": "10000000000000000000",
+      "_address": "0xdD870fA1b7C4700F2BD7f44238821C26f7392148",
+      "_amount": "10000000000000000000",
+      "length": 2
+    }
+  }
+]
+```
