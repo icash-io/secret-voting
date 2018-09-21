@@ -1,8 +1,8 @@
 ## ZKP Secret Voting Implementation
 
 Demo video during the Blockparty 2 Hackathon.  
-
-[Video demo](https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e)
+[Video demo 1](https://www.useloom.com/share/b300e33197d341d4a30552f150d955bd)
+[Video demo 2](https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e)
 
 Also viewable: [youtube channel](https://youtu.be/PGgE1TQl9Kk)
 

@@ -53,7 +53,7 @@ function addKey  (
 
 We rearrange the list of points into 3 points, and push it into an array of keys in the contract. It will be referred to later to check if someone has a right to vote.
 
-We then use the `addVoter()` function to add the wallet address of each voter. Only the addresses added with by `addVoter()` will be allowed to vote. There is no connection between the wallet addresses and the keys we added earlier; these are separate pieces of information, and only the members who have both a recognized wallet  address AND a valid key will be able to vote. Each voter also holds an attribute called `hashed_ticket`, which is a hash of the voter’s address concatenated with a number chosen by the voter.   
+We then use the `addCandidate()` function to add the wallet address of each voter. Only the addresses added with by `addCandidate()` will be allowed to vote. There is no connection between the wallet addresses and the keys we added earlier; these are separate pieces of information, and only the members who have both a recognized wallet  address AND a valid key will be able to vote. Each voter also holds an attribute called `hashed_ticket`, which is a hash of the voter’s address concatenated with a number chosen by the voter.   
 
 The `hashed_ticket` serves two purposes.   
   
@@ -64,7 +64,7 @@ After the election, all voters will be required to reveal their number to both e
   
 
 ```
-function addVoter(address new_voter, bytes32 _hashed_ticket) onlyOwner vote_not_over public {
+function addCandidate(address new_voter, bytes32 _hashed_ticket) onlyOwner vote_not_over public {
    require(vote_started == false);
    require(new_voter != address(0));
 
@@ -136,7 +136,7 @@ function claimTicket(uint256 ticket) public {
 }
 ```
 
-In `claimTicket()` function, the ticket will be hashed together with the sender’s address. If the result is what the voter registered originally, the voter will have the right to enter the lottery with his ticket number. Note also that random seed is updated with the ticket number which was kept secret until now. If the voter does not/cannot provide the original ticket number, then he will not be entered into the draw.
+In `claimTicket()` function, the ticket will be hashed together with the sender’s address. If the result is what the voter registered originally, the voter will have the right to enter the lottery with his ticket number. Note also that random seed is updated with the ticket number which was kept secret until now. If the voter does not/cannot provide the original ticket number, then he will not be entered into the draw.   
 
 Once all claims have been entered (or the election committee calls the end), winner of the lottery is announced.   
   
@@ -156,7 +156,7 @@ As soon as `endClaim()` is called, the winner will be with `findWinner()` functi
   
 ### Conclusion
   
-In summary, we were able to come up with a voting system that does not reveal the voters’ identities using zero-knowledge proofs. Without it, it would have been very difficult to secure the identities on the blockchain without leaving some chance of having the real identity found out. 
+In summary, we were able to come up with a voting system that does not reveal the voters’ identities using zero-knowledge proofs. Without it, it would have been very difficult to secure the identities on the blockchain without leaving some chance of having the real identity found out.  
 
 Because the blockchain is an immutable ledger, the data you store on it is traceable back to you. This happens with both the pseudoanonymous UTXO or account and balances design. Whether its smart contract function calls or cryptocurrency transactions tools already exist now that uses forensic analysis and machine learning to trace all your previous activity.
   
