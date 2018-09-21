@@ -47,6 +47,17 @@ The `vote()` function will internally call `verify()` to try to "match" the new 
 
 Calls `pairingProd2()` which calls `pairing()`. Returns the result of computing the elliptic curve pairing check.  
 
+## Assumptions  
+
+[ZKP Keys](https://github.com/icash-io/secret-voting/blob/master/zkp-keys)   
+
+Hard coded elliptic curve points.    
+  
+[Voters](https://github.com/icash-io/secret-voting/blob/master/voters.txt)  
+  
+The first row is the public address of the account signing the transaction.  
+
+
 ---
 
 
