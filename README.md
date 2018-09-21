@@ -1,11 +1,15 @@
-## ZKP Secret Voting Implementation
+# ZKP Secret Voting Implementation
 
 Demo video during the Blockparty 2 Hackathon.  
-[Video demo 1](https://www.useloom.com/share/b300e33197d341d4a30552f150d955bd)
-[Video demo 2](https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e)
 
-Also viewable: [youtube channel](https://youtu.be/PGgE1TQl9Kk)
-
+[Video demo 1](https://www.useloom.com/share/b300e33197d341d4a30552f150d955bd)    
+https://www.useloom.com/share/b300e33197d341d4a30552f150d955bd
+  
+[Video demo 2](https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e)  
+https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e    
+  
+Also viewable: [youtube channel](https://youtu.be/PGgE1TQl9Kk)  
+  
 iCash CTO Ling Qing Meng was asked to speak and mentor at Block Party 2 in Seoul, Korea this July. During this event, Ling was asked to deliver a speech regarding iCash, and their implementation of Zero Knowledge Proofs in Voting. Part of this event saw the students broken into teams, requiring them to all conceptualize, and build a working blockchain based project in 2 days. Ling oversaw the winning team's project outline and build, in which they implemented ZK Proofs. 
 
 ![alt text](https://i.imgur.com/doxOtL3.jpg) 
@@ -45,7 +49,6 @@ Calls `pairingProd2()` which calls `pairing()`. Returns the result of computing 
 
 ---
 
-https://www.useloom.com/share/a7fa2fd8f9f741de8c2e134fa5cd730e
 
 # Potential Applications
 
