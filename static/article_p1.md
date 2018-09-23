@@ -151,6 +151,8 @@ function endClaim() onlyOwner public {
 
 }
 ``` 
+
+Insert section
  
 As soon as `endClaim()` is called, the winner will be with `findWinner()` function and the prize ETH will be transferred to the winner. Note how `findWinner()` function is taking the random seed collected from all claiming voters as an input. This means it will be very difficult to influence the outcome of this vote during the voting phase.   
   
