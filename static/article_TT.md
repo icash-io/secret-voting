@@ -9,12 +9,30 @@ tags:
   
 # How iCash protects votes and voter identity in it's Proof of Trust protocol
 
+
+
 ## Introduction
+
+### Forward
+
+This blog post will be part of a 3 part series where we cover:    
+
+Part 1: We do the ZK proof on-chain with pre-generated values. This will show how we dissociate the voter identity, from the knowledge that the voter is authorized to vote in this current round. There will be a few key assumptions that we make, we'll highlight which additional nuances to address, to fully decentralize the private voting process.
+  
+Part 2: In our upcoming second post, we will do a full ZK version (with all the nice shadow identities and ZK proof generation/validation). This will demonstrate the most up to date research and development that our core engineer's have been working on at iCash.    
+   
+Part 3: Bringing it all together. Understanding the clear motivation for ZKP's not just for iCash but for all public and private chains, and this becoming the standard application of cryptographic techniques for blockchain interoperability.   
+   
+
+### Purpose
+
 The Proof of Trust protocol enables network participants, or Delegates, to individually input data and achieve distributed consensus on a live verifiable event.  Their voting needs to be done in private, which is difficult on an open platform such as Ethereum. We will need to use zero-knowledge proofs to provide this function. Throughout the following explanation, we will use the example of an on-chain anonymous voting election with three running candidates: Alice, Bob, and Charlie.
 
 Here we have a voting contract that gives each voter a chance to win a lottery. This is an example way to encourage people to vote without revealing their identities. 
 
 This is particularly useful for creating a decentralized voting protocol that verifies that live verifiable events.
+
+
 
 
 ## Phase 1: Setup
