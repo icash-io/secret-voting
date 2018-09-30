@@ -17,7 +17,7 @@ tags:
 
 This blog post will be part of a 3 part series where we cover:    
 
-Part 1: We do a non-ZK version. This will show what we have already, and key assumptions that we make and what nuances would allow us to fully remove the central authority problem.  
+Part 1: We do the ZK proof on-chain with pre-generated values. This will show how we dissociate the voter identity, from the knowledge that the voter is authorized to vote in this current round. There will be a few key assumptions that we make, we'll highlight which additional nuances to address, to fully decentralize the private voting process.
   
 Part 2: In our upcoming second post, we will do a full ZK version (with all the nice shadow identities and ZK proof generation/validation). This will demonstrate the most up to date research and development that our core engineer's have been working on at iCash.    
    
