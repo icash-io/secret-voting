@@ -156,3 +156,46 @@ End Result:
   }
 ]
 ```
+
+
+# Other Notes
+
+## BN 128 Curves 
+
+Main thing in the Pairing library.   
+
+BN curves are a family of pairing friendly elliptic curves over large prime fields. Introduced in 2005 by Barreto and Naehrig. They are one of the preferred families for implementing assyemmetric pairings nowadays.  They achieve essentially optimal parameters for obtaining bilinear groups at the 128-bit security level.  
+
+Indeed BN curves are of prime order (they satisfy p = 1) and embedding degree k = 12; thus the pairing on BN curve over a 256 bit prime field __F__p takes its values in the field __F__p^12 of size `256 * 12 = 3072`. Then solving the discrete log problem both in the the group of points of the curve and in __F__p^k takes time about 2^128 as required. 
+
+Suffice it to say BN algo outputs an elliptic curve of the form: 
+
+
+`E: y^2 = x^3 + b` over a field 
+
+__F__p with p congruent to 1 (mod 3). 
+
+### Section
+
+  For convenience they suggest to pick a p satisfying p = 31 mod 36, such that  
+`#E`  (__F__p)
+
+Reference: [https://www.di.ens.fr/~fouque/pub/latincrypt12.pdf](https://www.di.ens.fr/~fouque/pub/latincrypt12.pdf)
+
+## Notes 
+
+If using ZoKrates for Hackathons
+
+  
+they will need to understand that there are 3 components to this: proof generator, proof, verifier
+
+and that zokrates provides all 3 but they are individual parts
+
+
+## Testhash
+
+```
+function testHash(uint256 ticket) public view {
+    return keccak256(abi.encodePacked(msg.sender, ticket));
+}
+```
