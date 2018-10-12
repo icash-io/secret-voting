@@ -166,7 +166,7 @@ Main thing in the Pairing library.
 
 BN curves are a family of pairing friendly elliptic curves over large prime fields. Introduced in 2005 by Barreto and Naehrig. They are one of the preferred families for implementing assyemmetric pairings nowadays.  They achieve essentially optimal parameters for obtaining bilinear groups at the 128-bit security level.  
 
-Indeed BN curves are of prime order (they satisfy p = 1) and embedding degree k = 12; thus the pairing on BN curve over a 256 bit prime field __F__p takes its values in the field __F__p^12 of size `256 * 12 = 3072`. Then solving the discrete log problem both in the the group of points of the curve and in __F__p^k takes time about 2^128 as required. 
+Indeed BN curves are of prime order (they satisfy p = 1) and embedding degree k = 12; thus the pairing on BN curve over a 256 bit prime field &Fopf;<sub>p</sub> takes its values in the field &Fopf;<sub>p</sub>^12 of size `256 * 12 = 3072`. Then solving the discrete log problem both in the the group of points of the curve and in &Fopf;<sub>p</sub>^k takes time about 2^128 as required. 
 
 Suffice it to say BN algo outputs an elliptic curve of the form: 
 
