@@ -173,12 +173,14 @@ Suffice it to say BN algo outputs an elliptic curve of the form:
 
 `E: y^2 = x^3 + b` over a field 
 
-__F__p with p congruent to 1 (mod 3). 
+&Fopf;<sub>p</sub> with p congruent to 1 (mod 3). 
+
+
 
 ### Section
 
   For convenience they suggest to pick a p satisfying p = 31 mod 36, such that  
-`#E`  (__F__p)
+`#E`  (&Fopf;<sub>p</sub>)
 
 Reference: [https://www.di.ens.fr/~fouque/pub/latincrypt12.pdf](https://www.di.ens.fr/~fouque/pub/latincrypt12.pdf)
 
@@ -200,5 +202,6 @@ function testHash(uint256 ticket) public view {
 }
 ```
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+   
+
 
