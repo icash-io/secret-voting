@@ -1,5 +1,6 @@
 # ZKP Secret Voting Implementation
 
+Demo video during ETH San Francisco Hackathon: [Link](https://www.youtube.com/watch?v=5sXDem_YUw0&t=287s)   
 Demo video during the Blockparty 2 Hackathon.  
 
 [Video demo 1](https://www.useloom.com/share/b300e33197d341d4a30552f150d955bd)    
