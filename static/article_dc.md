@@ -1,32 +1,26 @@
-# **5 Takeaways from Devcon4**
+# **5 Key Takeaways from Devcon4**
 
-In this document I will cover the highliglhts of the trip. I will allso write a public facing article "Technology Thursdays" where I can cover a lot of the awesome discussion that happened at our iCash CTO dinner and other events I attended throughout the week. 
-
-
-
-# Devcon4 Day 1
+In this document I will cover the highliglhts of my trip to Prague for the Devcon4 conference. This conference was a showcase for all major players involved in building blockchain technology.  
 
 ![devcon4BIG](https://i.imgur.com/Hiw0uJI.jpg)
 
-I started off the day with an interview with Sasha at BIG Crypto. We covered a variety of topics, his entertaining story on how he first heard about the iCash team while at Consensus Singapore, an indepth look at the most prevalent trends in blockchain technology, and how iCash will scale it's blockchain protocol for dispute resolution. 
+I started off the day with an interview about iCash with Sasha at BIG Crypto. We covered a variety of topics: his entertaining story on how he first heard about the iCash team while at Consensus Singapore, an indepth look at the most prevalent trends in blockchain technology, and how iCash will scale it's blockchain protocol for dispute resolution. 
 
 ![](https://i.imgur.com/8SA0Gai.png)
 
-We'll be providing an update to this article in the next few days with a link to the full video clip. 
+We'll be providing an update to this article in the next few days with a link to the full video clip.    
+  
 
-![](https://i.imgur.com/88w9Udo.png)
+At the end of the conversation, he asked me to predict the 5 most important discussion points gained from attending the conference. In the rest of this article, I'm sharing those points after having an amazing week of learning from the best of the best. 
 
-![](https://i.imgur.com/chv0N1M.png)
 
-### **Origin Protocol**
 
-Met up with Matt and Josh Fraser. We talked about ERC725 tokens. I asked them if they were nervous about the lack of Ethereum scaling being a problem blocking their success. They are currently most focused on user acquisition. 
 
-We have institutional partners already. They want to partner with us and see that we have app's with users. 
 
-![originfounders](https://i.imgur.com/m46y89k.png)
 
-# Devcon Day 2
+
+
+# 1. The Future of Privacy and Scalability: ZK Starks
 
 ### **ZK Starks**
 
@@ -75,10 +69,29 @@ Proof (tx hash or signature)
 Comparison of various encryption algorithms used to generate `Algebraic Intermediate Representations`, a building block in ZK Starks. 
 
 
+# 2. The need for Decentralized Trust 
+## A blockchain system must properly decentralize trust in all layers in the protocol 
+## Devcon4 Day 1
 
+
+
+![](https://i.imgur.com/88w9Udo.png)
+
+![](https://i.imgur.com/chv0N1M.png)
+
+[Process for Arbitration on Smart Contracts](https://medium.com/icash-io/processes-for-arbitration-on-smart-contracts-a9a20905dbfe)
   
+# Night time events
 
-### **Vitalik Buterin Talk**
+### **Origin Protocol**
+
+Met up with Origin Protocol founders Matt Liu and Josh Fraser. We talked about ERC725 tokens. I asked them if they were nervous about the lack of Ethereum scaling being a problem blocking their success. They are currently most focused on user acquisition. 
+
+We have institutional partners already. They want to partner with us and see that we have app's with users. 
+
+![originfounders](https://i.imgur.com/m46y89k.png)  
+
+# 3. **Vitalik Buterin Talk**
 
 Devcon4 Day 2, first keynote. On this day was also Bitcoin's 10 year anniversary. 
 
@@ -101,7 +114,7 @@ What this means for iCash is that we are on the right track. I'm getting confirm
 The future will also be in eWASM, which is pushed forward by Dr. Gavin Wood (Ethereum cofounder) and his team at Parity. eWASM will make Smart Contract development more secure, cheaper, faster to develop (being able to re-use existing libraries that have been around for 30 years), and most importantly will improve runtime performance of the Ethereum Virtual Machine.  
 
 
-# CTO Investor Dinner
+# 4. CTO Investor Dinner
 
 
 
@@ -124,7 +137,7 @@ Hyungsuk Kang, Ethereum Foundation Scholar
 
 > I am planning to reach out to Nick Johnson to talk about this.  Circularize CEO and I had very interesting conversation on implementation of blockchain to build circular economy, and he is looking for blockchain network to develop it. He might come to Korea next year March. Future relationship can be developed. 
 
-### **Algorand**
+# **5. Algorand**
 
 Algorand is a high throughput blockchain. THey are often compared to Dfinity (essentially, the most hyped high throughput blockchain that does _not_ use dPOS). Their VP of Engineering discussed with me the technical details of their project, which has a 500 milllion dollar valuation. 
 
@@ -135,4 +148,5 @@ They see themsevles as platform that can handle accounts and transactions as wel
 Currently, they are also in the infrastructure phase. They need desktop wallets, mobile DApps, DEX's, Centralized Exchanges. Currentlyl their testnet supports sending (signing) and receiving Algorand native currency transactions. It also supports their model non-binding provably fair staking method of block production. 
 
 Notable is that Naveed really opened up about working with iCash after I mentioned our deal with Hashgraph. He invited me to their private meetup, even Roman Storm's crew couldn't get past the guestilst. I still used the oppurtunity to catch up on the latest tech he's been working on. 
+
 
