@@ -123,7 +123,6 @@ The future will also be in eWASM, which is pushed forward by Dr. Gavin Wood (Eth
 
 ![](https://i.imgur.com/CQ9jMp8.png)
 
-I introduced him with K3/LL's CSO. This is a guy who has already raised multiple rounds of 3-5 million USD for an emerging market telecom business providing WiFi to Africa's upperclass at a premium. He wants to take his business model and bring potentiallly hundreds of millilons of users to the blockchain via Security Tokens. 
 
 ### **Attendee thoughts**
 Zane Witherspoon, [Nov 6, 2018 11:59:00]:
