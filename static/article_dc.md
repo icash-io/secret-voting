@@ -24,49 +24,26 @@ At the end of the conversation, he asked me to predict the 5 most important disc
 
 ### **ZK Starks**
 
-Attended ZK Stark meeting. There I was able to represent iCash and talk to them about joining their partner program. They actively help projects. They need a technical spec to see whether or not iCash would be a good fit for partnership. 
 
-![](https://i.imgur.com/uaFxpOi.png)
-Me with Starkware CTO Oren Katz
+![](https://i.imgur.com/yDjpYcE.jpg)
 
-Their key advantage is that they are a monopoly both on ZK Stark knowledge and development efforts. Starks will be commonplace and be a scaling solultion for Ethereum. 
 
 
 The most packed talk of the conference was the Starkware lecture about ZK Starks. In a room that typically fits 150, I sat/stood with over 300 people cramming in to the space listening and getting the firsthand knowledge of the latest development in ZK Stark technology.
 
-![](https://i.imgur.com/46Y47Eg.jpg)
-
-These are comparisons of Stark verifiers. What does stark verifier do? 95% of the process is checking hashes. Prover commits to large data sets. Verifier checks small number of linear algebra equations. 
-
-### Significance to this
-
-We now apply this line of thinking using Stark verifiers to now enable scalable blockchains. The hash check is done showing commitments (transactions on the blockchain) that can be traced back to the merkle root is correct. 
-
-Previously in the realm of blockchain scalabililty tech, if some one shows you a proof that corresponded to 10k Pedersen Hashes, one would ultimately need to verify each one by one, with computational complexity of `O(n); n = 10,000;`. 
-
-Now, with the advent of Stark verifiers, only `1200 to 1900` hashes would need to be checked, improving verification time from linear to  sublinear computational complelxity ` ~O(log n)`. That results in a massive performance boost for light client validation, which allows blockchains like Ethereum to be re-architected to distribute heavy computation load onto the light client network and enhance throughput and overall scalability.
-
-Following the lecture was a 40 minute live demo, where they demonstrated their scalabillity techniques to generate and verify Starks on their laptop and even on their mobile device! 
-
-### Formalized in a rough spec
-
-> Prove that I know the merkle path from a leaf to a root, 2 leaves exist in a specific merkle root. (Equivalent also to proving a shielded transaction.) 
-
-**3 arguments required**:   
-Leaf hash   
-Tree depth  
-Security hash  
-
-**Given a GUI, specify:**  
-Merkle root  
-Leaf hash  
-Tree depth  
-Proof (tx hash or signature)  
+![](https://i.imgur.com/uaFxpOi.png)
+> Meeting Starkware CTO Oren Katz.
 
 
-![](https://i.imgur.com/Z6HWH7m.jpg)
+I learned that they have a  partner program where Starkware actively helps project design their protocol. He asked me more about how [iCash uses ZK Snark technology to build the privacy layer for smart contract contestations](https://www.youtube.com/watch?v=hvFsXK58xuE). 
 
-Comparison of various encryption algorithms used to generate `Algebraic Intermediate Representations`, a building block in ZK Starks. 
+Starks will be commonplace and be a scaling solution for Ethereum and given the right partnership oppurtunity, we would not hesitate to build our tech robustly to be the best long term dominant solution.   
+
+
+
+
+
+
 
 
 # 2. The need for Decentralized Trust 
@@ -116,27 +93,37 @@ The future will also be in eWASM, which is pushed forward by Dr. Gavin Wood (Eth
 
 # 4. CTO Investor Dinner
 
+I participated in an exclusive dinner for blockchain CTOs during Devcon 4.
+
+There I led a discussion on iCash's Proof of Trust Protocol, [dispute arbitration and it's importance in the ecosystem](https://medium.com/icash-io/processes-for-arbitration-on-smart-contracts-a9a20905dbfe), how Security Tokens bring extreme value to user-based top down platforms built on blockchain, securities in blockchain, and more.
 
 
 
 ### **What went down**
 
+This event brought together the best and brightest of the space, to enjoy a night away from the hectic schedules of Devcon 4 attendees. It created an intimate setting where after every conversation, a CTO could walk away feeling like they could freely express their ideas and learn from each other without the daily pressures of business and competition. 
+
 ![](https://i.imgur.com/CQ9jMp8.png)
 
 
 ### **Attendee thoughts**
-Zane Witherspoon, [Nov 6, 2018 11:59:00]:
+
+
+
 > It was really great to discuss the idea of network livelieness with the VP of Eng of Algorand
-
+> 
 > And talking with the technical leads of different investment firms was really interesting as well
+  
+Zane Witherspoon, CTO at Dispatch Labs
 
-Hyungsuk Kang, Ethereum Foundation Scholar
 
 > I talked with Makoto from ENS team and talked about its use case for IoT. ENS team was intereseted to talk about my suggestion for IoT further since ENS team is desperately looking for a use case. 
-
+> 
 > I am planning to reach out to Nick Johnson to talk about this.  Circularize CEO and I had very interesting conversation on implementation of blockchain to build circular economy, and he is looking for blockchain network to develop it. He might come to Korea next year March. Future relationship can be developed. 
 
-# **5. Algorand**
+Hyungsuk Kang, Ethereum Foundation Research Scholar
+
+# **5. Algorand Meetup**
 
 Algorand is a high throughput blockchain. THey are often compared to Dfinity (essentially, the most hyped high throughput blockchain that does _not_ use dPOS). Their VP of Engineering discussed with me the technical details of their project, which has a 500 milllion dollar valuation. 
 
@@ -149,3 +136,7 @@ Currently, they are also in the infrastructure phase. They need desktop wallets,
 Notable is that Naveed really opened up about working with iCash after I mentioned our deal with Hashgraph. He invited me to their private meetup, even Roman Storm's crew couldn't get past the guestilst. I still used the oppurtunity to catch up on the latest tech he's been working on. 
 
 
+
+# Conclusion
+
+There  will be ideas exchanged, and partnerships forged, that completely change the trajectory of the space as a whole. With so many of the best and brightest attending this event, we are going to celebrate this collection of amazing human beings to the best of our abilities.
