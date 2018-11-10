@@ -56,7 +56,7 @@ Starks will be commonplace and be a scaling solution for Ethereum and given the 
 
 ![](https://i.imgur.com/chv0N1M.png)
 
-[Process for Arbitration on Smart Contracts](https://medium.com/icash-io/processes-for-arbitration-on-smart-contracts-a9a20905dbfe)
+
 
 ### **Handshake (HNS)**
 
@@ -82,6 +82,7 @@ Ethereum Name Service (ENS) is the domain name service that gives an alphabetic 
 > At the Congress Center in Prague, bright and early
 
 
+
 ### **Origin Protocol**
 
 We talked about a mechanism to allow smart contracts to allow interactions from reputable people. They have submitted a proposal for ERC725 tokens to allow for that trusted transfer.  
@@ -93,7 +94,8 @@ We talked about a mechanism to allow smart contracts to allow interactions from 
 
 In order to truly decentralized the internet, one from the ground up using first principles; trust must be established at all layers in the protocol stack starting with root. 
 
-Thus, for Smart Contracts to be fully trusted and decentralized, they too must have a protocol to secure incoming and outgoing data (parameters, execution logic) such that the authenticity or validity can be proved in a deterministic manner - and because of that, there exist a deterministic way to contest and reclaim value that otherwise would have been lost.
+Thus, for Smart Contracts to be fully trusted and decentralized, they too must have a protocol to secure incoming and outgoing data (parameters, execution logic) such that the authenticity or validity can be proved in a deterministic manner - and because of that, [there exist a deterministic way to contest and reclaim value that otherwise would have been lost](https://medium.com/icash-io/processes-for-arbitration-on-smart-contracts-a9a20905dbfe).
+
 
 # 3. **Vitalik Buterin Talk**
 
@@ -168,13 +170,13 @@ Algorand is a high throughput blockchain. THey are often compared to Dfinity (es
 ![](https://i.imgur.com/0RPNS3U.png)
 Had a chance to discuss with their Founder Silvia and VP of Engineering Naveed the technical details of their project.
 
-They see themsevles as platform that can handle accounts and transactions as welll as smart contracts. Their founder is an MIT professor actually came up with the concept and methodology of their consensus 20 years ago. Algorand may be a pubilc permissionless blockchain (that can be configured to be private permissioned) that can handlle the scalle and complexity that iCash requires. Not only that, but he is very much in aggreeance that Algorand is proactively looking for end usecase DApps and Protocosl to be built on their platform. 
+They see themsevles as platform that can handle accounts and transactions as welll as smart contracts. Their founder is an MIT professor actually came up with the concept and methodology of their consensus 20 years ago. Algorand may be a pubilc permissionless blockchain (that can be configured to be private permissioned) that can handlle the scale and complexity that iCash requires. Not only that, but he is very much in aggreeance that Algorand is proactively looking for end usecase DApps and Protocols to be built on their platform. 
 
 
-Currently, they are also in the infrastructure phase. They need desktop wallets, mobile DApps, DEX's, Centralized Exchanges. Currentlyl their testnet supports sending (signing) and receiving Algorand native currency transactions. It also supports their model non-binding provably fair staking method of block production. 
+Currently, they are also in the infrastructure phase. They need desktop wallets, mobile DApps, DEX's, Centralized Exchanges. Currently their testnet supports sending (signing) and receiving Algorand native currency transactions. It also supports their model of non-binding provably fair staking method of block production. 
 
 
 
-# Conclusion
+# **Conclusion**
 
-There  will be ideas exchanged, and partnerships forged, that completely change the trajectory of the space as a whole. With so many of the best and brightest attending this event, we are going to celebrate this collection of amazing human beings to the best of our abilities.
+There  will be ideas exchanged, and partnerships forged, that completely change the trajectory of the space as a whole. With many of the best and brightest attending this event, I'm grateful to celebrate and learn from this collection of amazing human beings as we move blockchain technology into the mainstream. 
