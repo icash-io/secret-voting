@@ -52,27 +52,54 @@ Starks will be commonplace and be a scaling solution for Ethereum and given the 
 
 
 
-![](https://i.imgur.com/88w9Udo.png)
+
 
 ![](https://i.imgur.com/chv0N1M.png)
 
 [Process for Arbitration on Smart Contracts](https://medium.com/icash-io/processes-for-arbitration-on-smart-contracts-a9a20905dbfe)
-  
-# Night time events
+
+### **Handshake (HNS)**
+
+I noticed a rising interest in Decentralized DNS. There seems to be a recurring theme that a secure network system should be built with proper first principles. In order to truly decentralized the internet, one from the ground up using first principles; trust must be established at all layers in the protocol stack starting with root. 
+
+In the case of HNS, the root or backbone of their protocol is  the Domain Name System. 
+
+This idea has been around since the early days of Bitcoin. Handshake (HNS) is a relatively new project headed by Joseph Poon that has both raised significant funding and been donating generously to open source software foundations that have been around since the early days. I learned that it exists today as a fork of bitcoin with a different approach to mining.
+
+> Handshake works seamlessly with the existing DNS system. The domain names of the top 100,000 websites on the internet are being set aside for their legitimate owners to claim on Handshake [3]. 
+
+[Handshake Paper](https://handshake.org/files/handshake.txt)
+
+
+The fundamental issue that Handshake is solving, is that in order to trust any website, one must also trust the Certificate Authority that generated the TLS or SSL certificate that validated the authenticity of any given website to the browser.   
+
+
+### **Ethereum Name Service**
+
+Ethereum Name Service (ENS) is the domain name service that gives an alphabetic character name to your Ethereum address or dApp. They announced that apart from the .eth domain, two other top-level domains (TLDs) are becoming available in the next weeks: “.xyz” and “.luxe” are purchasable via traditional DNS registrars. The process of ENS registry.  
+
+![Congress Center Prague](https://i.imgur.com/88w9Udo.png)
+> At the Congress Center in Prague, bright and early
+
 
 ### **Origin Protocol**
 
-Met up with Origin Protocol founders Matt Liu and Josh Fraser. We talked about ERC725 tokens. I asked them if they were nervous about the lack of Ethereum scaling being a problem blocking their success. They are currently most focused on user acquisition. 
-
-We have institutional partners already. They want to partner with us and see that we have app's with users. 
+We talked about a mechanism to allow smart contracts to allow interactions from reputable people. They have submitted a proposal for ERC725 tokens to allow for that trusted transfer.  
 
 ![originfounders](https://i.imgur.com/m46y89k.png)  
+> Met up with Origin Protocol cofounders Matt Liu and Josh Fraser. 
+
+### **Day 1 Closing Thoughts**
+
+In order to truly decentralized the internet, one from the ground up using first principles; trust must be established at all layers in the protocol stack starting with root. 
+
+Thus, for Smart Contracts to be fully trusted and decentralized, they too must have a protocol to secure incoming and outgoing data (parameters, execution logic) such that the authenticity or validity can be proved in a deterministic manner - and because of that, there exist a deterministic way to contest and reclaim value that otherwise would have been lost.
 
 # 3. **Vitalik Buterin Talk**
 
-Devcon4 Day 2, first keynote. On this day was also Bitcoin's 10 year anniversary. 
+### Devcon4 Day 2, the future of Ethereum
 
-Vitalik talked Ethereum 2.0, and the centerpiece of his talk was about a blockchain system called the "beacon chain". The beacon chain is the "main chain" of the PoS system. 
+Vitalik talked Ethereum 2.0 (Serenity), and the centerpiece of his talk was about a blockchain system called the "beacon chain". The beacon chain is the "main chain" of the PoS system. 
 
 It's 3 core functions are:  
 * Store and maintain the set of active, queued, and slashed validators
@@ -88,10 +115,20 @@ My notes for the talk:
 
 What this means for iCash is that we are on the right track. I'm getting confirmations from mutliple sources, such as my in person meeting with Parity VP of Product, that Beacon chains and relay chains are the future of scalabiilty in the near term. 
 
-The future will also be in eWASM, which is pushed forward by Dr. Gavin Wood (Ethereum cofounder) and his team at Parity. eWASM will make Smart Contract development more secure, cheaper, faster to develop (being able to re-use existing libraries that have been around for 30 years), and most importantly will improve runtime performance of the Ethereum Virtual Machine.  
+The Smart Contracts of the future will be more lilkely written eWASM over Solildity. 
 
 
-# 4. CTO Investor Dinner
+eWasm is based off of WebAssembly(Wasm), a new Assembly standard being built for the web. The main advantage of using Wasm is performance (both speed and size). 
+
+> Wasm is a kin to LLVM IR and Low Level Instruction Set Architectures (ISAs). It is an defined as an Abstract Syntax Tree (AST) which has a textual representation using s-expressions. As an AST it has some higher level semantics than pure hardware ISAs. Including functions and basic flow control. Wasm is not finished a specification and still in flux. This EIP suggest using a subset of wasm to allow us to tailor the semantics to Ethereum. This spec is designed so that the minimum amount of changes a wasm VM would need to be implemented. This should make existing implementations of wasm easy to integrate and provide a way to run Ethereum flavored wasm on a unmodified wasm VM.  
+
+[Source: EIP-140](https://github.com/ethereum/EIPs/issues/48)
+
+
+The EIP first came out in May, since then it has been _additionally_ pushed forward by Dr. Gavin Wood (Ethereum cofounder) and his team at Parity. eWASM will make Smart Contract development more secure, cheaper, faster to develop (being able to re-use existing libraries that have been around for 30 years), and most importantly will improve runtime performance of the Ethereum Virtual Machine.  
+
+
+# 4. **CTO Investor Dinner**
 
 I participated in an exclusive dinner for blockchain CTOs during Devcon 4.
 
@@ -123,17 +160,18 @@ Zane Witherspoon, CTO at Dispatch Labs
 
 Hyungsuk Kang, Ethereum Foundation Research Scholar
 
-# **5. Algorand Meetup**
+# **5. Adoption and Partnerships**
 
-Algorand is a high throughput blockchain. THey are often compared to Dfinity (essentially, the most hyped high throughput blockchain that does _not_ use dPOS). Their VP of Engineering discussed with me the technical details of their project, which has a 500 milllion dollar valuation. 
+### Algorand Meetup
+Algorand is a high throughput blockchain. THey are often compared to Dfinity (essentially an well-regarded decentralized and high throughput blockchain). 
+
+![](https://i.imgur.com/0RPNS3U.png)
+Had a chance to discuss with their Founder Silvia and VP of Engineering Naveed the technical details of their project.
 
 They see themsevles as platform that can handle accounts and transactions as welll as smart contracts. Their founder is an MIT professor actually came up with the concept and methodology of their consensus 20 years ago. Algorand may be a pubilc permissionless blockchain (that can be configured to be private permissioned) that can handlle the scalle and complexity that iCash requires. Not only that, but he is very much in aggreeance that Algorand is proactively looking for end usecase DApps and Protocosl to be built on their platform. 
 
-![](https://i.imgur.com/0RPNS3U.png)
 
 Currently, they are also in the infrastructure phase. They need desktop wallets, mobile DApps, DEX's, Centralized Exchanges. Currentlyl their testnet supports sending (signing) and receiving Algorand native currency transactions. It also supports their model non-binding provably fair staking method of block production. 
-
-Notable is that Naveed really opened up about working with iCash after I mentioned our deal with Hashgraph. He invited me to their private meetup, even Roman Storm's crew couldn't get past the guestilst. I still used the oppurtunity to catch up on the latest tech he's been working on. 
 
 
 
